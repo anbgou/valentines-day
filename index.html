@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валентинка</title>
+    <link rel="stylesheet" href="valentines.css">
+</head>
+<body>
+    <div class="floating-hearts"></div>
+
+    <div class="container">
+      <!-- Login Screen -->
+      <div id="loginScreen" class="screen active">
+        <h1>Введи нашу особливу дату!! ❤</h1>
+        <p>♡ Підказку не дам (може)  ♡</p>
+        <input
+          type="password"
+          id="anniversaryCode"
+          placeholder="Сюда пиши...(˶˃ ᵕ ˂˶)"
+        />
+        <button onclick="checkAnniversary()">Далі</button>
+    </div>
+
+    <!-- Main Screen -->
+    <div id="valentineScreen" class="screen">
+        <h1>Привіт Ромчииииик ♡⸜(˃ ᵕ ˂ )⸝</h1>
+        <div class="timer-container">
+            <p class="timer-title">А знаєш скільки часу ти мене вже терпиш?</p>
+            <div id="timer">
+                <span id="days"></span> днів, 
+                <span id="hours"></span> годин, 
+                <span id="minutes"></span> хвилин, 
+                <span id="seconds"></span> секунд!
+            </div>
+        </div>
+        <div class="photo-container">
+            <div class="photo">
+                <img src="memory_1.jpg" alt="Memory 1" />
+            </div>
+            <div class="photo">
+                <img src="memory_3.jpg" alt="Memory 2" />
+            </div>
+            <div class="photo">
+                <img src="memory_2.jpg" alt="Memory 3" />
+            </div>
+            <div class="photo">
+                <img src="memory_5.jpg" alt="Memory 4" />
+            </div>
+            <div class="photo">
+                <img src="memory_4.jpg" alt="Memory 5" />
+            </div>
+            <div class="photo">
+                <img src="memory_6.jpg" alt="Memory 6" />
+            </div>
+        </div>
+        <p class="we-cool">То ми такі класненькі були >ᴗ< </p>
+        <button onclick="beValentine('be-valentine')">Сюдаа (˶˃ ᵕ ˂˶) .ᐟ.ᐟ</button>
+    </div>
+    <div id="be-valentine" class="screen">
+        <p>Будеш моєю валентинкою? 🌹</p>
+        <div class="button-container">
+            <button onclick="showFinalScreen('hooray-screen')">Звичайно 💕</button>
+            <button id="noButton" class="no-button">Нє 💔</button>
+        </div>
+    </div>
+    <div id="hooray-screen" class="screen">
+        <img class="cat" src="cat.gif" alt="cat">
+        <p>Ураа я так і знала!</p>
+        <p>Люблю тебе сильно-сильно! 💖</p>
+    </div>
+    <script src="valentines.js"></script>
+</body>
+</html>
